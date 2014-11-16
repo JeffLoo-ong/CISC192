@@ -67,9 +67,9 @@ int main ()
 
     char table[n][n];                   //Create a 2 dimensional table with those two numbers.
     
-    for(int i = 0;i < n ; i ++)         //Starting from 0 to n (Columns/Row?)
+    for(int i = 0;i < n ; i ++)         //Starting from 0 to n (Row)
     {
-        for(int j = 0; j < n ; j++)     //From 0 to n (Columns/Row?) 
+        for(int j = 0; j < n ; j++)     //From 0 to n (Columns) 
         {
          
          table [i][j] = mystr[ i*n+j ]; //Make a table and append letters from mystring 
@@ -78,9 +78,9 @@ int main ()
         
     }
   
-    for(int i = 0;i < n ; i ++)         //For each Column?
+    for(int i = 0;i < n ; i ++)         //For each Row
     {
-        for(int j = 0; j < n ; j++)     //For each Row?
+        for(int j = 0; j < n ; j++)     //For each Column
         {
          printf("%c" , table[j][i]);    //Print the contents of the table from top to bottom, left to right
         }
