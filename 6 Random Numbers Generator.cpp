@@ -1,6 +1,6 @@
 /******************************************************
-* asst2.cpp - Generate 6 Lottery numbers
-* max25  Jeffrey Luong
+* Generate 6 Lottery numbers
+* Jeffrey Luong
 * Fri Jun  27 16:00:00 PDT 2014
 ******************************************************/
 
@@ -29,9 +29,7 @@ int main()
             printf("%d", newnum);           //Print the new number 
             x+=1;                           //Increase the count by 1
         }
-
-
     }
 
-}                                           //End Program
+}                                           
 
