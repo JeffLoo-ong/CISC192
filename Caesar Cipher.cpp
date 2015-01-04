@@ -1,6 +1,6 @@
 /******************************************************
-* asst03.cpp - Create a Caesar Cipher
-* max25  Jeffrey Luong
+* Create a Caesar Cipher
+* Jeffrey Luong
 * Tues Jul  8  7:42:00:00 PDT 2014
 ******************************************************/
 #include <iostream>
@@ -13,7 +13,6 @@ int main (int argc, char *argv[])
   char letter; 
   string words = "";
   int shift = atoi(argv[1]);
-    
   
       while (! cin.eof())
       {
@@ -43,7 +42,5 @@ int main (int argc, char *argv[])
          words = ""; 
         }
       }
-      
-
 }
         
