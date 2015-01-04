@@ -22,9 +22,9 @@ int main ()
     min = hours * 60;
     sec = min * 60;
     cout << "You have played: " <<years << " Years\n";
-    cout << days <<" Days\n";
-    cout << hours << " Hours\n";
-    cout << min << " Minutes\n";
-    cout << sec << " Seconds\n";
+        << days <<" Days\n";
+        << hours << " Hours\n";
+        << min << " Minutes\n";
+        << sec << " Seconds\n";
     return 0;
 }
