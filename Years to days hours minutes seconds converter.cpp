@@ -1,7 +1,7 @@
 /***********************************************************
-* asst0.cpp - Create a program that converts years to days,
+* Create a program that converts years to days,
 * hours, mins, and seconds.
-* max25 / Jeffrey Luong
+* Jeffrey Luong
 * Fri Jun 13 8:00:00 PDT 2014
 ************************************************************/
 
