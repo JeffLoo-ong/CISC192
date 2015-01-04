@@ -1,6 +1,6 @@
 /******************************************************
-* asst04.cpp - Matrix Transposition Cipher  
-* max25  Jeffrey Luong
+* Matrix Transposition Cipher  
+* Jeffrey Luong
 * Mon Jul  14  11:54:00:00 PDT 2014
 ******************************************************/
 
@@ -77,9 +77,8 @@ int main ()
          table [i][j] = mystr[ i*n+j ]; //Make a table and append letters from mystring 
          //CHECK mystr[i*n+j] for reasoning behind. 11.25.2014
         }
-        
     }
-  
+    
     //Print the contents of the table from top to bottom, left to right           
     for(int i = 0;i < n ; i ++)         //(Row)
     {
@@ -88,8 +87,5 @@ int main ()
          printf("%c" , table[j][i]);    
         }
     }
-
  printf("\n");                          //Add a space at the bottom if more lines are transposed
- 
-
 }                                      
