@@ -1,6 +1,6 @@
 /******************************************************
-* asst05.cpp - Character Count w/ Histogram Display
-* max25  Jeffrey Luong
+* Character Count w/ Histogram Display
+* Jeffrey Luong
 * Fri Jul  18  15:45:00:00 PDT 2014
 ******************************************************/
 
@@ -16,7 +16,7 @@ int main()
 {
     int lines = atoi(getenv("LINES")) ;     //Used to determine lines in terminal
     int columns = atoi(getenv("COLUMNS")) ; //Used to determine Columns in terminal
-    int count [26] ;                //Initialize an array of that contains 26 values called count
+    int count [26] ;                //Initialize count to contain 26 values 
     int stuff[26] ;                 //Initialize stuff to be used for bars vertically
     int n ;                         
     int vmax = 0 ;
@@ -25,7 +25,7 @@ int main()
     int d = 0 ;
     char c ;                        //Initialize a char C to store the letters as char
     
-    for (n = 0; n < 26; n++)        //For loop here goes through every single  index in the array
+    for (n = 0; n < 26; n++)        //Loops through array count
     {
         count[n] = 0 ;
     }
@@ -33,7 +33,7 @@ int main()
     //Obtain the letters from the stream, check if alpha, 
     //check if lower, if not, convert and then tally in count
 
-    while (! cin.eof())             //While not at the end of file...
+    while (! cin.eof())             
     {
         c = cin.get() ;             //Grab a single char
         if (isalpha(c))             //if c is a character in the alphabet
@@ -43,7 +43,6 @@ int main()
             }
             count [c-'a']++ ;       //Each char is subtracted from a to obtain an INT value. As each value is retrieved, the COUNT for these values in the array goes up by 1.
         }
-
     }
    
     for (int x = 0; x < 26; x++)    //Print out Letters and # of occurences
@@ -53,7 +52,7 @@ int main()
     
     //Determine the max element in the array
     
-    int max = count[0] ;            //Set max equal to the first element so we can check through each one
+    int max = count[0] ;            //Set max equal to the first element so we can check through each index
 
     for (int i = 0; i < 26; i++)
     {
@@ -99,12 +98,10 @@ int main()
     }
 
     //Print a to z in line with bars above
-
     for (int z = 0; z < 26; z++)            
     {
         cout << setw(2) << ((char)(z+97)) ; 
     }    
-
       cout << endl ;
 }
 
@@ -130,4 +127,4 @@ int main()
         cout << "Max= " << max << endl ;        // Used to test functionality of Max/Min
         cout << "Min= " << min << endl ; 
         cout << "Columns= " << columns << endl ;
-        */
+ */
