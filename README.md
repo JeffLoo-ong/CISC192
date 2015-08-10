@@ -1,4 +1,4 @@
-Cplusplus-Coursework
+CISC192 (Mesa College)
 ====================
 
 Contains assignments and helpful codebits I encountered while taking my first C++ course at a JC.
